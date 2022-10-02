@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:id="@+id/rtLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingBottom="3sp"
+            android:paddingTop="3sp"
+            android:layout_margin="1dp">
+          <!-- android:background="@drawable/borders"
+            -->
+
+
+            <TextView
+                android:id="@+id/averagetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="average time"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="15sp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date"
+                android:textSize="16dp"
+                android:layout_marginTop="3dp"
+
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/lev"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/date"
+                android:layout_alignParentRight="true"
+                android:text="Level"
+                android:textColor="@color/DodgerBlue"
+
+                />
+            <TextView
+                android:id="@+id/scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/DarkBlue"
+                android:layout_below="@id/date"
+                android:layout_marginRight="55dp"
+                android:textSize="20sp"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+

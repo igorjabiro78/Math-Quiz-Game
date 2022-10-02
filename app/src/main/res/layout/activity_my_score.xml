@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyScore"
+    android:orientation="vertical"
+    android:layout_margin="20sp">
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Game Over -"
+        android:textSize="40sp"
+        android:textColor="@color/DarkRed"
+        android:layout_marginBottom="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70sp"
+        />
+    <!--    <TextView-->
+    <!--        android:id="@+id/playdate"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Date and Time"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_marginBottom="10sp"-->
+
+    <!--        />-->
+
+
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Time"
+        android:textSize="20dp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/Navy"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/bonu"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Bonus"-->
+    <!--        android:textSize="20dp"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:layout_marginTop="5sp"-->
+    <!--        />-->
+
+    <TextView
+        android:id="@+id/myscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="30sp"
+        android:padding="20sp"
+        android:textColor="@color/white"
+        android:background="@color/DarkBlue"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:gravity="bottom"
+        android:layout_marginTop="15sp"
+        android:layout_height="match_parent">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:text="Play Again"
+            android:id="@+id/playagain"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:onClick="playAgaim"
+            android:layout_height="wrap_content">
+        </Button>
+
+
+
+        <Button
+            android:id="@+id/allscores"
+            android:layout_width="wrap_content"
+            android:text="All Scores"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:onClick="AllScores"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
